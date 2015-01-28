@@ -22,5 +22,5 @@ Number(undefined);  // NaN
 0 == null;      // false
 0 == undefined; // false
 1 > null;       // true
-1 > undefined;   // false
+1 > undefined;  // false
 ```
