@@ -64,4 +64,4 @@ Object.keys(o);                 // []
 for (var key in o) { console.log(key); } // a
 ```
 
-It seems like that `Object.create()` adds keys to `Object.prototype` and removes the key after creating the instance.
+It seems like that `Object.create()` adds keys to `Object.prototype` and removes the keys after creating the instance.
