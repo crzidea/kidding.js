@@ -21,10 +21,12 @@ new Float64Array([0.1]);    // [0.1]
 ```js
 Number(null);       // 0
 Number(undefined);  // NaN
-0 == null;      // false
-0 == undefined; // false
-1 > null;       // true
-1 > undefined;  // false
+0 == null;          // false
+0 == undefined;     // false
+1 > null;           // true
+1 > undefined;      // false
+typeof null;        // "object"
+typeof undefined;   // "undefined"
 ```
 
 
