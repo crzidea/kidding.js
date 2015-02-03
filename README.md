@@ -85,7 +85,7 @@ typeof NaN  // "number"
 
 ```js
 var a = 0;
-function b() { console.log(a); var a = 10;}
+function b() { console.log(a); var a = 10; }
 b();  // undefined
 ```
 
