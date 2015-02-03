@@ -71,6 +71,35 @@ It seems like that `Object.create()` adds keys to `Object.prototype` and removes
 
 ----------
 
+## NaN
+
+```js
+NaN == NaN  // false
+typeof NaN  // "number"
+```
+
+
+----------
+
+## Define Variable in Function
+
+```js
+var a = 0;
+function b() { console.log(a); var a = 10;}
+b();  // undefined
+```
+
+
+## Constructor, Prototype
+
+```js
+function A () {this.a = 0;}
+A.prototype.a = 1;
+new A();  // A {a: 0}
+```
+
+----------
+
 ## Promise, Callback
 
 The only reason that I'm not using `Promise` is because of memory usage. You can find a test [here](./benchmarks/promise-vs-callback). I'm not saying `Promise` is bad, it was just a chose.
