@@ -93,7 +93,7 @@ b();  // undefined
 ## Constructor, Prototype
 
 ```js
-function A () {this.a = 0;}
+function A() { this.a = 0; }
 A.prototype.a = 1;
 new A();  // A {a: 0}
 ```
