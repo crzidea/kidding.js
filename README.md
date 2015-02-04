@@ -105,3 +105,11 @@ new A();  // A {a: 0}
 The only reason that I'm not using `Promise` is because of memory usage. You can find a test [here](./benchmarks/promise-vs-callback). I'm not saying `Promise` is bad, it was just a chose.
 
 BTW, I'd like to use `generator` if it could be.
+
+
+----------
+
+## Misc
+
+- [Learning Lua from JS](http://phrogz.net/lua/LearningLua_FromJS.html) - An overview of the similarities and differences between Lua and JS; a great start for JavaScript folks looking to pick up Lua.
+
