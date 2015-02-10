@@ -101,7 +101,7 @@ new A();  // A {a: 0}
 
 ----------
 
-## Create A String with different ways
+## Create A String with Different Ways
 
 ```js
 typeof Object('a')                  // "object"
