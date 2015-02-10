@@ -48,15 +48,15 @@ delete o.a;
 o;                              // Object {a: 1}
 Object.keys(o);                 // []
 var o2 = Object.create(o);
-o2                              // Object {a: 1}
+o2;                             // Object {a: 1}
 Object.keys(o2);                // []
 
 // Instance of Function
-function O () {this.a = 1;};
+function O() {this.a = 1;};
 var o = new O;
 o;                              // O {a: 1}
 Object.keys(o);                 // ["a"]
-function O () {};
+function O() {};
 O.prototype.a = 1;
 var o = new O;
 o;                              // O {a: 1}
@@ -101,12 +101,27 @@ new A();  // A {a: 0}
 
 ----------
 
-## Create A String with Object()
+## Create A String with different ways
 
 ```js
-typeof Object('a')            // "object"
-Object('a') instanceof String // true
-Object('a') instanceof Object // true
+typeof Object('a')                  // "object"
+Object('a') instanceof String       // true
+Object('a') instanceof Object       // true
+
+typeof (new String('a'))            // "object"
+(new String('a')) instanceof String // true
+(new String('a')) instanceof Object // true
+
+typeof String('a')                  // "string"
+String('a') instanceof Object       // false
+String('a') instanceof String       // false
+
+typeof 'a'                          // "string"
+'a' instanceof Object               // false
+'a' instanceof String               // false
+
+Object('a') + 'b'           // "ab"
+typeof (Object('a') + 'b')  // "string"
 ```
 
 
