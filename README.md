@@ -1,5 +1,5 @@
 # kidding.js
-Javascript is kidding me!
+JavaScript is kidding me!
 
 
 ----------
