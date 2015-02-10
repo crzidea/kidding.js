@@ -32,7 +32,7 @@ typeof undefined;   // "undefined"
 
 ----------
 
-## Object
+## Keys of object
 
 ```js
 // Simple
@@ -97,6 +97,31 @@ function A() { this.a = 0; }
 A.prototype.a = 1;
 new A();  // A {a: 0}
 ```
+
+
+----------
+
+## Create A String with Object()
+
+```js
+typeof Object('a')            // "object"
+Object('a') instanceof String // true
+Object('a') instanceof Object // true
+```
+
+
+----------
+
+## Type of alert in IE
+
+```js
+// IE 10
+typeof alert            // "function" 
+// IE 9
+typeof alert            // "object" 
+typeof (function () {}) // "function" 
+```
+
 
 ----------
 
