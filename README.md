@@ -16,17 +16,30 @@ new Float64Array([0.1]);    // [0.1]
 
 ----------
 
-## 0, null, undefined
+## Empty Values
+
+value     | Number(value) / +value | parseInt(value) | 0 == value | 1 > value | typeof value
+----------|------------------------|-----------------|------------|-----------|--------------
+0         | 0                      | 0               | true       | true      | "number"   
+null      | 0                      | NaN             | false      | true      | "object"
+undefined | NaN                    | NaN             | false      | false     | "undefined"
+false     | 0                      | NaN             | true       | true      | "boolean"
+''        | 0                      | NaN             | true       | true      | "string"
+[]        | 0                      | NaN             | true       | true      | "object"
+{}        | NaN                    | NaN             | false      | false     | "object"
+
+
+----------
+
+## parseInt(), Number() / +
 
 ```js
-Number(null);       // 0
-Number(undefined);  // NaN
-0 == null;          // false
-0 == undefined;     // false
-1 > null;           // true
-1 > undefined;      // false
-typeof null;        // "object"
-typeof undefined;   // "undefined"
+// Implement toString()
+var o = {toString: (function () { return ''; })}
++o              // 0
+parseInt(o)     // NaN
++''             // 0
+parseInt('')    // NaN
 ```
 
 
