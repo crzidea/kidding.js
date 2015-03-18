@@ -97,9 +97,14 @@ typeof NaN  // "number"
 ## Define Variable in Function
 
 ```js
-var a = 0;
-function b() { console.log(a); var a = 10; }
-b();  // undefined
+var a = 1;
+(function () {
+  console.log(a); // undefined
+  a = 2;
+  var a = 3;
+  console.log(a); // 3
+})();
+console.log(a);   // 1
 ```
 
 
