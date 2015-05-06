@@ -107,6 +107,23 @@ var a = 1;
 console.log(a);   // 1
 ```
 
+```js
+(function () { 
+  console.log(a); // function a() {}
+  return;
+  function a() {}
+})()
+```
+
+```js
+(function () { 
+  var a = 1; 
+  console.log(a); // 1
+  return; 
+  function a() {}
+})()
+```
+
 
 ## Constructor, Prototype
 
