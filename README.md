@@ -186,5 +186,6 @@ BTW, I'd like to use `generator` if it could be.
 
 ## Misc
 
+- [Optimization killers](https://github.com/petkaantonov/bluebird/wiki/Optimization-killers) - This document will contain advice to avoid writing code that will perform significantly worse than expected.
 - [Learning Lua from JS](http://phrogz.net/lua/LearningLua_FromJS.html) - An overview of the similarities and differences between Lua and JS; a great start for JavaScript folks looking to pick up Lua.
 
