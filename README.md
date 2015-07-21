@@ -45,6 +45,20 @@ parseInt('')    // NaN
 
 ----------
 
+## How to call functions of const integer
+
+```js
+var a = 4;
+a.toString();   // "4"
+4.toString();   // Uncaught SyntaxError: Unexpected token ILLEGAL
+4..toString();  // "4"
+```
+
+WTF
+
+
+----------
+
 ## Keys of object
 
 ```js
